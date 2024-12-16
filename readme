@@ -1,0 +1,21 @@
+Título: Ejemplo de Sistema de Login con FastAPI, API Key y JWT
+
+Descripción:
+Este proyecto demuestra la implementación de un sistema de autenticación de usuarios utilizando FastAPI, JWT y un sencillo fichero JSON como “base de datos”. Incluye protección por API Key para endpoints de registro y login, y protección mediante token JWT para el endpoint privado /user/me.
+La intención es ofrecer un ejemplo didáctico y fácil de entender para quienes deseen aprender a construir sus propias APIs seguras con FastAPI. No se recomienda usar este código en entornos de producción, ya que no incluye prácticas avanzadas como el hasheo de contraseñas o un sistema de refresh tokens.
+
+Características Principales:
+
+1. FastAPI + Uvicorn: Framework moderno y asíncrono para APIs en Python.
+2. JWT (JSON Web Tokens): Tokens seguros para autenticar a los usuarios.
+3. Protección por API Key: Rutas de registro y login restringidas mediante cabecera X-API-KEY.
+4. Almacenamiento en JSON: Sin necesidad de una base de datos; la información se guarda en el fichero users.json.
+5. Ejemplo autodocumentado: El código incluye comentarios y un tutorial para aprender a usar y probar la aplicación.
+
+
+
+**Notas Importantes:
+
+Cambiar la SECRET_KEY y la API_KEY antes de desplegar en cualquier entorno.
+No almacenar contraseñas en texto plano en producción.
+Este proyecto es solo un ejemplo educativo.
